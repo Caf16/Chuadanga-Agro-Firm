@@ -1,1 +1,250 @@
-# Chuadanga-Agro-Firm
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chuadanga Agro Firm</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+  background:#f5faf6;
+  color:#203126;
+}
+header{
+  background:white;
+  padding:12px 5%;
+  box-shadow:0 2px 10px #0002;
+}
+.nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:bold;
+  color:#145c32;
+}
+.logo img{
+  width:55px;
+  height:55px;
+  object-fit:contain;
+  border-radius:50%;
+}
+nav a{
+  margin-left:15px;
+  text-decoration:none;
+  color:#174d2d;
+  font-weight:bold;
+}
+.hero{
+  background:linear-gradient(110deg,#0d3420ee,#176b3acc);
+  color:white;
+  padding:90px 7%;
+}
+.hero h1{font-size:48px;margin:0 0 10px}
+.hero h2{font-size:25px}
+.hero p{font-size:19px;max-width:650px;line-height:1.7}
+.btn{
+  display:inline-block;
+  padding:13px 20px;
+  margin:8px 8px 0 0;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.order{background:#25D366;color:white}
+.products{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 18px;
+}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:34px;color:#145c32}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 20px #0001;
+  padding-bottom:20px;
+}
+.card img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+}
+.card-content{padding:18px}
+.card h3{
+  color:#176b3a;
+  margin:0 0 8px;
+  font-size:22px;
+}
+.price{
+  font-size:20px;
+  font-weight:bold;
+  margin:12px 0;
+}
+.about{
+  background:#176b3a;
+  color:white;
+  padding:60px 7%;
+  text-align:center;
+}
+.contact{
+  padding:60px 20px;
+  text-align:center;
+}
+.phone{
+  font-size:28px;
+  font-weight:bold;
+  margin:15px;
+}
+footer{
+  background:#092216;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+@media(max-width:750px){
+  .grid{grid-template-columns:1fr 1fr}
+  nav{display:none}
+  .hero h1{font-size:38px}
+}
+@media(max-width:480px){
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">
+<img src="logo.jpg" alt="Chuadanga Agro Firm Logo">
+<span>Chuadanga Agro Firm</span>
+</div>
+
+<nav>
+<a href="#home">হোম</a>
+<a href="#products">পণ্য</a>
+<a href="#about">আমাদের সম্পর্কে</a>
+<a href="#contact">যোগাযোগ</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<h1>চুয়াডাঙ্গা এগ্রো ফার্ম</h1>
+<h2>Chuadanga Agro Firm</h2>
+<p>
+পোল্ট্রি ও এগ্রো পণ্যের বিশ্বস্ত ঠিকানা।
+ডিম, বাচ্চা, পাখি এবং কৃষিভিত্তিক বিভিন্ন পণ্য ও সেবা।
+</p>
+
+<a class="btn order" href="#products">পণ্য দেখুন</a>
+<a class="btn order" href="https://wa.me/8801410799311">
+WhatsApp-এ যোগাযোগ করুন
+</a>
+</section>
+
+<section class="products" id="products">
+
+<div class="title">
+<h2>আমাদের পণ্য</h2>
+<p>মানসম্মত পণ্য ও সেবা</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="titir-eggs.jpg" alt="তিতিরের ডিম">
+<div class="card-content">
+<h3>তিতিরের ডিম</h3>
+<p>তাজা ও মানসম্মত তিতিরের ডিম।</p>
+<div class="price">৳ ৭৫ / পিস</div>
+<a class="btn order"
+href="https://wa.me/8801410799311?text=আমি%20তিতিরের%20ডিম%20অর্ডার%20করতে%20চাই">
+অর্ডার করুন
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="turkey-eggs.jpg" alt="টার্কির ডিম">
+<div class="card-content">
+<h3>টার্কির ডিম</h3>
+<p>মানসম্মত টার্কি মুরগির ডিম।</p>
+<div class="price">৳ ১৩০ / পিস</div>
+<a class="btn order"
+href="https://wa.me/8801410799311?text=আমি%20টার্কির%20ডিম%20অর্ডার%20করতে%20চাই">
+অর্ডার করুন
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="turkey-chick-1.jpg" alt="ইন্ডিয়ান টার্কি বাচ্চা">
+<div class="card-content">
+<h3>ইন্ডিয়ান টার্কি বাচ্চা</h3>
+<p>ইন্ডিয়ান জাতের টার্কি বাচ্চা।</p>
+<div class="price">৳ ২৬০ / পিস</div>
+<a class="btn order"
+href="https://wa.me/8801410799311?text=আমি%20ইন্ডিয়ান%20টার্কি%20বাচ্চা%20অর্ডার%20করতে%20চাই">
+অর্ডার করুন
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="titir-chicks.jpg" alt="তিতির মুরগির বাচ্চা">
+<div class="card-content">
+<h3>তিতির মুরগির বাচ্চা</h3>
+<p>সুস্থ ও মানসম্মত তিতির মুরগির বাচ্চা।</p>
+<div class="price">৳ ১৫০ / পিস</div>
+<a class="btn order"
+href="https://wa.me/8801410799311?text=আমি%20তিতির%20মুরগির%20বাচ্চা%20অর্ডার%20করতে%20চাই">
+অর্ডার করুন
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>আমাদের সম্পর্কে</h2>
+<p>
+Chuadanga Agro Firm পোল্ট্রি ও কৃষিভিত্তিক পণ্য নিয়ে কাজ করে।
+আমাদের লক্ষ্য গ্রাহকদের মানসম্মত পণ্য ও বিশ্বস্ত সেবা প্রদান করা।
+</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>যোগাযোগ করুন</h2>
+<div class="phone">📞 01410799311</div>
+
+<a class="btn order"
+href="https://wa.me/8801410799311">
+WhatsApp-এ মেসেজ করুন
+</a>
+</section>
+
+<footer>
+© 2026 Chuadanga Agro Firm — All Rights Reserved
+</footer>
+
+</body>
+</html>
